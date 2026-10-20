@@ -1,0 +1,27 @@
+[project]
+name = "flight-satisfaction-prediction"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "ThoughtStorm06", email = "troze516@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "catboost>=1.2.10",
+    "ipython>=9.17.1",
+    "ipywidgets>=8.1.9",
+    "kagglehub>=1.0.2",
+    "lightgbm>=4.7.0",
+    "notebook>=7.6.3",
+    "pandas>=3.0.6",
+    "scikit-learn>=1.9.1",
+    "seaborn>=0.13.2",
+]
+
+[project.scripts]
+flight-satisfaction-prediction = "flight_satisfaction_prediction:main"
+
+[build-system]
+requires = ["uv_build>=0.12.12,<0.13.0"]
+build-backend = "uv_build"
